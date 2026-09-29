@@ -1,0 +1,92 @@
+:root {
+  color: #222;
+  background: #fff;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 44rem;
+  padding: 4rem 1.5rem;
+}
+
+h1,
+h2 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0 0 1rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin: 3rem 0 0.75rem;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post-list li {
+  align-items: baseline;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 0.4rem 0;
+}
+
+time {
+  color: #666;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+article header {
+  margin: 2rem 0 2.5rem;
+}
+
+article header time {
+  display: block;
+}
+
+.back-link {
+  font-size: 0.9rem;
+}
+
+article p {
+  margin: 1.25rem 0;
+}
+
+@media (max-width: 32rem) {
+  main {
+    padding-top: 2.5rem;
+  }
+
+  .post-list li {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0;
+    margin: 1rem 0;
+  }
+}

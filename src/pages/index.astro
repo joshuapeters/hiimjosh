@@ -1,0 +1,19 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostList from '../components/PostList.astro';
+
+const posts = (await getCollection('blog')).sort(
+  (firstPost, secondPost) => secondPost.data.publishedAt.valueOf() - firstPost.data.publishedAt.valueOf(),
+);
+---
+
+<BaseLayout title="Josh Peters">
+  <h1>Hi, I’m Josh.</h1>
+  <p>I make things for the web and write down what I learn along the way.</p>
+
+  <section aria-labelledby="writing">
+    <h2 id="writing">Writing</h2>
+    <PostList posts={posts} />
+  </section>
+</BaseLayout>
