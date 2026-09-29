@@ -1,6 +1,6 @@
 :root {
-  color: #222;
-  background: #fff;
+  color: #e7e7e3;
+  background: #171717;
   font-family: Georgia, 'Times New Roman', serif;
   font-size: 18px;
   line-height: 1.6;
@@ -57,7 +57,7 @@ a:hover {
 }
 
 time {
-  color: #666;
+  color: #a6a69e;
   font-size: 0.85rem;
   white-space: nowrap;
 }
